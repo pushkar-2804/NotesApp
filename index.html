@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Notes Making App</title>
+  </head>
+  <body>
+    <main>
+      <div id="popBox">
+        <div id="pop">
+          <h3 class="heading">Add a new note</h3>
+          <hr />
+          <form action="" id="addNoteForm">
+            <label for="popTitle">Title</label>
+            <input type="text" name="title" class="popInput" id="popTitle" />
+            <label for="popDescription">Description</label>
+            <textarea
+              name="popDescription"
+              id="popDescription"
+              class="popInput"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button class="btn addNoteButton">Add note</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Main Notes -->
+      <div class="wrapper">
+        <div class="grid" id="notes">
+          <div class="note" id="makeNote">
+            <h3 class="heading">Add new Note</h3>
+            <img src="images/add.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

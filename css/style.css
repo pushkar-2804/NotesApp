@@ -1,0 +1,108 @@
+:root{
+    --color-primary:#F05454;
+    --color-secondary:#30475E;
+    --color-input:#4e7297;
+    --color-text:#F5F5F5;
+    --color-other: #121212;
+    --color-different: #90ff90;
+}
+
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Arvo', serif;
+}
+
+.colorAccent{
+    background: var(--color-primary);
+}
+
+.btn{
+    padding: 2vh 0;
+    margin: 3vh auto;
+    width: 50%;
+}
+
+
+/* Pop Up Window */
+#popBox{
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    /* width: 100%; */
+    display: none;
+    border: var(--color-secondary) 2px solid;
+    height: 100vh;
+    margin: 0;
+    z-index: 10;
+    filter: blur(1.4);
+    background: var(--color-text);
+}
+#pop{
+    /* display: flex;
+    flex-direction: column; */
+    background: var(--color-different);
+    color: var(--color-other);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+    width: 40%;
+    padding: 2vh 2vw 10vh 2vw;
+    border: var(--color-secondary) 2px solid;
+}
+.heading{
+    margin-bottom: 1vh;
+}
+#addNoteForm{
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Pop input fields */
+.popInput{
+    margin: 1vh 0 2vh;
+    /* background-color: var(--color-input); */
+    padding: 2vh 1vw;
+}
+
+/* Add note button */
+
+.addNoteButton{
+    background: var(--color-other);
+    color: var(--color-text);
+}
+
+
+/*  ==================================Main App */
+.wrapper{
+    background-color: var(--color-input);
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.note{
+    border: 2px solid var(--color-primary);
+    max-width: 20vw;
+    margin: 4vh auto;
+    padding: 2vh 2vw;
+    min-height: 30vh;
+    text-align: center;
+    /* vertical-align: middle; */
+}
+
+
+#makeNote img{
+    width: 4vw;
+}
